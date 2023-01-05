@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automatico</title>
+    <link rel="stylesheet" href="./css/stilos-perrones.css">
+</head>
+
+<body>
+    <h1>Bienvenido, a mi simulador de un cajero automático</h1>
+    <p>
+        <img src="./img/cajero.webp" alt="imagen de un cajero"> <br />
+    </p>
+    <h2 id="saldo"></h2>
+    <h3>Escribe la cantidad expresada en miles de pesos sin puntos ni comas que quieres retirar.</h3>
+    <p>Ej: <b>Para retirar 100.000,</b> escribe: 100000.</p>
+    <p><b>Solo múltiplos de 10 mayores que 10.000</b> nada de 13.000, 15.000, 8.000, 123.000. <b>OJO</b></p>
+    <p><b>CADA VEZ QUE RETIRES PLATA DEBES RESETEAR dando click al botón RESET</b></p>
+    <p>
+        <input type="number" id="valorIngresado" placeholder="cantidad en miles de pesos" class="input-numero">
+        <input type="button" value="Extraer" id="escupe">
+    </p>
+    <p id="resultado"></p>
+    <p>Resetear
+        <input type="button" value="Reset" id="reset">
+    </p>
+    <script src="./classBillete.js"></script>
+    <script src="./codiguito.js"></script>
+</body>
+
+</html>
